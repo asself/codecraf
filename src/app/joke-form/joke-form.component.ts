@@ -1,21 +1,5 @@
 import { Component, Output, EventEmitter } from '@angular/core';
-
-export class Joke {
-  public setup: string;
-  public punchline: string;
-  public hide: boolean;
-
-  constructor(setup: string, punchline: string) {
-    this.setup = setup;
-    this.punchline = punchline;
-    this.hide = true;
-  }
-
-  toggle() {
-    this.hide = !this.hide;
-  }
-}
-
+import { Joke } from '../joke';
 @Component({
   selector: 'app-joke-form',
   templateUrl: './joke-form.component.html'

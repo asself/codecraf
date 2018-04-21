@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Joke } from '../joke-form/joke-form.component';
+import { Joke } from '../joke';
 
 
 @Component({
@@ -19,5 +19,10 @@ export class JokeListComponent {
 
   addJoke(joke) {
     this.jokes.unshift(joke);
+  }
+
+  removeJoke(joke) {
+    const index = this.jokes.indexOf(joke);
+    this.jokes.splice(index, 1);
   }
 }
