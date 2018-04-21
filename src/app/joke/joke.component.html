@@ -1,1 +1,9 @@
-<div> this is a joke</div>
+
+<div class="card card-body mt-1">
+  <h4 class="card-title">{{joke.setup}}</h4>
+  <p class="card-text"
+     [hidden]="joke.hide">{{joke.punchline}}</p>
+  <a (click)="joke.toggle()"
+     class="btn btn-warning">Tell Me
+  </a>
+</div>

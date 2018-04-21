@@ -5,9 +5,16 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 
+import { JokeComponent } from './joke';
+import { JokeFormComponent } from './joke-form';
+import { JokeListComponent } from './joke-list';
+
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    JokeComponent,
+    JokeFormComponent,
+    JokeListComponent
   ],
   imports: [
     BrowserModule
