@@ -5,7 +5,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 
 
-import { JokeComponent } from './joke';
+import { JokeComponent } from './joke/joke.component';
 import { JokeFormComponent } from './joke-form';
 import { JokeListComponent } from './joke-list';
 
