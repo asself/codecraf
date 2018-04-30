@@ -1,8 +1,13 @@
-import { Component, Output, EventEmitter } from '@angular/core';
+import { Component, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
 import { Joke } from '../joke';
 @Component({
   selector: 'app-joke-form',
-  templateUrl: './joke-form.component.html'
+  templateUrl: './joke-form.component.html',
+  styleUrls: [
+    './joke-form.component.less'
+  ],
+  // encapsulation: ViewEncapsulation.Native
+  encapsulation: ViewEncapsulation.Emulated
 })
 export class JokeFormComponent {
   @Output() jokeCreated = new EventEmitter<Joke>();
