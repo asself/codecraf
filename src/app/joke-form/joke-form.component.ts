@@ -1,5 +1,5 @@
 import { Component, Output, EventEmitter, ViewEncapsulation } from '@angular/core';
-import { Joke } from '../joke';
+import { Joke } from '../joke-class';
 @Component({
   selector: 'app-joke-form',
   templateUrl: './joke-form.component.html',

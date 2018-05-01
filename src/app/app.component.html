@@ -1,4 +1,9 @@
 <div class="container mt-1">
-  <app-joke-list></app-joke-list>
+  <app-joke-list>
+    <app-joke [joke]="joke">
+      <span class="setup">{{joke.setup}}?</span>
+      <h1 class="punchline">{{joke.punchline}}</h1>
+    </app-joke>
+  </app-joke-list>
 </div>
 
