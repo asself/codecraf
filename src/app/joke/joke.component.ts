@@ -15,6 +15,7 @@ import {
 } from '@angular/core';
 import { Joke } from '../joke-class';
 
+
 @Component({
   selector: 'app-joke',
   templateUrl: './joke.component.html'
@@ -24,6 +25,7 @@ export class JokeComponent implements
   AfterContentInit, AfterContentChecked,
   AfterViewInit, AfterViewChecked,
   OnDestroy {
+
   @Input() joke: Joke;
   @Output() jokeDeleted = new EventEmitter<Joke>();
 
