@@ -30,7 +30,7 @@ export class JokeComponent implements
   @Output() jokeDeleted = new EventEmitter<Joke>();
 
   constructor() {
-    console.log(`new - data is ${this.joke}`);
+    // console.log(`new - data is ${this.joke}`);
   }
 
   ngOnChanges(changes: SimpleChanges) {
